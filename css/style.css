@@ -1,0 +1,65 @@
+/* RESET  */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: #1e2d3b;
+  --mainColor: #2e3a46;
+  --titleColor: #fffcf5;
+  --textColor: #747779;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.header {
+    background-color: var(--mainColor);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.header img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.grid-container {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto  auto auto auto;
+    column-gap: 2em;
+    padding: 10px;
+  }
+
+.card {
+    background-color: var(--mainColor)!important;
+    height: 50vh;
+    padding: 10px;
+}
+
+.card img {
+    height: 180px;
+    margin: 5% auto;
+
+
+}
+h2 {
+    color: var(--titleColor);
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h3,p {
+    color: var(--textColor);
+    font-size: 1.2em;
+}
